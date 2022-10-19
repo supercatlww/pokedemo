@@ -13,12 +13,8 @@ export default {
     data() {
         return {
             limit: 1200,
-            pagesize: 10,
-            currentPage: 1,
-            count: 0,
             filter_list_data: [],
             list_data: [],
-            list_count: 0,
             cache_item_data: {},
             cache_list_data: {},
 
@@ -98,16 +94,6 @@ export default {
             })
             return intersection;
 
-        },
-        getChild(list, pid) {
-            let newArr = []
-            list.forEach((item) => {
-                if (item.parent_id === pid) {
-                    item.children = this.getChild(list, item.id);
-                    newArr.push(item);
-                }
-            })
-            return newArr;
         },
     },
 }

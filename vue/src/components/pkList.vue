@@ -50,7 +50,7 @@ export default {
 
   },
   methods: {
-    async refreshList() {
+    refreshList() {
       this.page_list = [];
       for (let i = 0; i < this.total_list.length; i++) {
         if ((i >= this.page_index * this.page_size) && (i < this.page_size * (this.page_index + 1))) {
