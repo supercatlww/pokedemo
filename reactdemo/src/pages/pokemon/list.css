@@ -1,0 +1,31 @@
+.filter-container {
+  display: flex;
+}
+
+.filter-container div:nth-of-type(1) {
+  align-self: flex-start;
+  margin: 1rem;
+}
+
+button {
+  margin: 0.5rem;
+}
+.img {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.img img {
+  max-width: 100%;
+}
+
+.row {
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
