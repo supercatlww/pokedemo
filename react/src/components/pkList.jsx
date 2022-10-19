@@ -18,7 +18,6 @@ const PkList = (props) => {
     let tmplist = [];
     for (let i = 0; i < total_list.length; i++) {
       if (i >= pageIndex * pageSize && i < pageSize * (pageIndex + 1)) {
-        //let { name, sprites } = await this.$parent.fetchListItems(total_list[i].name, total_list[i].url)
         tmplist.push({ name: total_list[i].name, imgUrl: "" });
         props
           .fetchListItems(total_list[i].name, total_list[i].url)
